@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar } from "@material-ui/core";
+import { Avatar, IconButton } from "@material-ui/core";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
@@ -10,22 +10,23 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-          <Avatar />
-          <div className="sidebar__headerRight">
+        <Avatar />
+        <div className="sidebar__headerRight">
+          <IconButton>
             <DonutLargeIcon />
+          </IconButton>
+          <IconButton>
             <ChatIcon />
+          </IconButton>
+          <IconButton>
             <MoreVertIcon />
-          </div>
-
+          </IconButton>
+        </div>
       </div>
 
-      <div className="sidebar__search">
+      <div className="sidebar__search"></div>
 
-      </div>
-
-      <div className="sidebar__chats">
-
-      </div>
+      <div className="sidebar__chats"></div>
     </div>
   );
 }
