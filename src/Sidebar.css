@@ -1,1 +1,11 @@
-/* We will add style for Sidebar component here */
+/*sidebar is a child of app__body*/
+.sidebar {
+    flex: 0.35; /* sidebar sera une box de 35% */
+}
+
+.sidebar__header {
+    display: flex; /* everything goes to a row*/
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
