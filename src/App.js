@@ -1,5 +1,6 @@
-//import React from "react";
+import React from "react";
 import './App.css';
+import Sidebar from "./Sidebar"
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       {/* <h1>Let's build a whatsapp clone</h1> */}
 
       <div className="app__body">
-        {/* Sidebar on left */}
+        <Sidebar />
         {/* Chat on right */}
       </div>
     </div>
