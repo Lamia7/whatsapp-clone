@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Avatar } from "@material-ui/core";
 import "./SidebarChat.css";
 
-function SidebarChat({ addNewChat }) { // passing prop: addNewChat
+function SidebarChat({ addNewChat }) {
+  // passing prop: addNewChat
   // get random seed whenever the SidebarChat loads
   const [seed, setSeed] = useState("");
 
@@ -10,7 +11,12 @@ function SidebarChat({ addNewChat }) { // passing prop: addNewChat
     setSeed(Math.floor(Math.random() * 5000));
   }, []);
 
-  const createChat = () => {};
+  const createChat = () => {
+    const roomName = prompt("Please enter name for chat");
+    if (roomName) {
+      // if they enter something in prompt, do some clever database stuff later with the captured variable called roomName...
+    }
+  };
 
   // if it is not the addNewChat, (?) show this, (:) otherwise
   return !addNewChat ? (
