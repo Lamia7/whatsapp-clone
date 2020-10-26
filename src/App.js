@@ -10,7 +10,7 @@ function App() {
 
       <div className="app__body">
         <Sidebar />
-        {/* Chat on right */}
+        <Chat />
       </div>
     </div>
   );
