@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Avatar } from "@material-ui/core";
 import "./SidebarChat.css";
 
 function SidebarChat() {
+  // get random seed whenever the SidebarChat loads
+  const [seed, setSeed] = useState("");
+
+  useEffect(() => {
+    setSeed(Math.floor(Math.random() * 5000));
+  }, []);
+
   return (
     <div className="sidebarChat">
-        {/* check documentation here : https://avatars.dicebear.com/*/}
-      <Avatar src="https://avatars.dicebear.com/api/female/cindy.svg" />
+      <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
       <div className="sidebarChat__info">
         <h2>Room name</h2>
         <p>Last message...</p>
