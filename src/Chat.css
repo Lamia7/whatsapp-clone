@@ -92,3 +92,8 @@
   /* delete the button but keeps the functionnality to submit by hitting ENTER */
   display: none;
 }
+
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
