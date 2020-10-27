@@ -50,3 +50,10 @@
   background-color: #ffffff;
   margin-bottom: 30px;
 }
+
+.chat__name {
+  position: absolute;
+  top: -15px;
+  font-size: xx-small;
+  font-weight: 800;
+}
