@@ -87,3 +87,8 @@
   padding: 10px;
   border: none;
 }
+
+.chat__footer > form > button {
+  /* delete the button but keeps the functionnality to submit by hitting ENTER */
+  display: none;
+}
