@@ -50,6 +50,10 @@
   background-color: #ffffff;
   margin-bottom: 30px;
 }
+.chat__reciever {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
 
 .chat__timestamp {
   margin-left: 10px;
